@@ -1,0 +1,77 @@
+
+
+
+
+.totalBarreProgress{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    margin-bottom: 20rem;
+}
+
+
+h3{
+    text-align: center;
+}
+.progre-section {
+    width: 40%;
+    height: 20%;
+    max-width:370px;
+    border-radius: 1rem;
+    background: #f8f3f8;
+    padding: 1rem 2rem;
+    margin: auto;
+    margin-top: 2rem;
+
+    .task-progre {
+        margin: 1rem 0;
+    }
+
+    .task-progre p {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #4f3e50;
+        
+    }
+
+    span {
+        color: #563857;
+        
+        
+    }
+
+    .progre {
+        width: 100%;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        border-radius: 10px;
+        height: 10px;
+    }
+
+    .progre::-webkit-progre-bar {
+        color: #d771da;
+    }
+
+    .progre::-webkit-progre-bar,
+    .progre::-webkit-progre-value {
+        border-radius: 10px;
+    }
+
+    .progre::-moz-progre-bar {
+        border-radius: 10px;
+    }
+
+    .progre1::-webkit-progre-value {
+        background: #96329b;
+    }
+
+    .progre2::-webkit-progre-value {
+        background: #7b277d;
+    }
+
+    .progre3::-webkit-progre-value {
+        background: #af26c4;
+    }
+}

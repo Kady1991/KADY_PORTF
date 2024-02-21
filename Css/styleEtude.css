@@ -1,0 +1,110 @@
+
+#container {
+    
+    width: 90vw;
+    height: 30%;
+    border: solid 1px #563857;   
+    border-radius: 0.5rem; 
+    margin: 0 auto;
+  
+    opacity: 0;
+    transform: translateY(10px) rotate(190deg);
+    transform-origin: left;
+    animation: in 1.1s forwards;
+    animation-delay: 2.9s;
+}
+
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    width: 100%;
+}
+
+.progress-container::before {
+    content: '';
+    /*your have to write this to be able to see it*/
+    background-color: lightgrey;
+    color: #563857;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    /*it represents the empty line*/
+    z-index: -1;
+}
+
+.progress {
+    background-color: #563857;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    color: #0f0f0f;
+    border-radius: 50%;
+    height: 130px;
+    width: 190px;
+    border: 3px solid lightgray;
+    transition: 0.4s ease;
+}
+
+.circles.active {
+    border-color: #563857;
+}
+
+.btn {
+    background-color: #563857;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+    
+    
+}
+
+.button{
+    width: 15%;
+    height: 20%;
+    margin-left: 43%;
+    margin-top: 2rem;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.progress.progre.progre1{
+    background-color: #563857;
+}
+
+.progress.progre.progre2{
+    background-color: #563857;
+}

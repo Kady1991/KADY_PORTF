@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="/Css/style.css" />
+    <link rel="stylesheet" href="/Css/barreProgress.css">
+    <link rel="stylesheet" href="Css/styleEtude.css">
+    <link rel="stylesheet" href="/Css/contact.css">
+    <link rel="stylesheet" href="/Css/projet.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDts9C9iWNF83ExezBXJLIJ0g2dwoERg08&callback=initMap"
+
+        async defer></script>
+    <script src="/js/contact.js" defer></script>
+    <script src="/js/darkMode.js" defer></script>
+    <script src="/js/barreEtude.js" defer></script>
+    <script src="/js/scrroll.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html"><li class="menu">Accueil</li></a>
+                <!-- <a href="index.html"><li class="menu">A propos</li></a> -->
+                <a href="#titre"><li class="menu">Compétences</li></a>
+                <a href="index.html"><li class="logo_div"><img id="logo" src="/assets/logo1.png" alt="logo" /></li></a>
+                <!-- <a href="./portfolio/index.html"><li class="menu">Portfolio</li></a> -->
+                <a href="#projet"><li class="menu">Portfolio</li></a>
+                <a href="#Contact"><li class="menu">Contact</li></a>
+
+                <!-- dark mode -->
+                <svg onclick="changeMode()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="sun">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                </svg>
+                <svg onclick="changeMode()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="moon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>
+            </ul>
+            <!-- <li class="night"><img class="night" src="assets/images/night2.png" onclick="myFunction()" alt="image lune">
+            </li> -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="apropos">
+                <img class="moi" src="/assets/images/img1.jpg" alt="mon dessin" />
+                <div class="texte">
+                    <h1 class="Presentation">
+                        <span class="nom">Kady SANGARE</span>
+                        <span class="dev">Frontend Developpeuse junior </span>
+                        <span class="Bienvenue">"En reconversion, passionnée par le développement web frontend,
+                            mon objectif est de créer des expériences utilisateur
+                            exceptionnelles".
+                            <p> un développeur web passionné par la création d'interfaces simples et fonctionnelles. Mon approche repose sur 
+                                la clarté du code et la résolution pragmatique des problèmes. Explorez mon portfolio pour découvrir mes projets 
+                                et mon engagement envers des solutions web efficaces.
+                            </p>
+                        
+                        </span>
+                        <!-- <span class="">Bienvenue sur mon portfolio.</span> -->
+                        <a class="Bienvenue" href="index.html"><button class="apropos-btn">A PROPOS</button></a>
+                    </h1>
+
+                    <!-- <span class="fade-in one">For 30 years, we've partnered with</span> <span class="fade-in two experts">experts like you</span>                     <span class="fade-in three">to transform and deliver timely and compelling content to the digital world.</span> -->
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="kills">
+            <h1 id="titre">COMPETENCES</h1>
+
+            <div class="totalBarreProgress">
+
+                <!-- 1ere barre -->
+
+                <div class="progre-section" data-aos="fade-left" data-aos-once="true">
+                    <h3>Langages</h3>
+                    <div class="task-progre">
+                        <p>Html / Css / Scss
+                            <span>95%</span>
+                        </p>
+                        <progress class="progre progre1" max="100" value="95"></progress>
+                    </div>
+                    <div class="task-progre">
+                        <p>JavaScript
+                            <span>60%</span>
+                        </p>
+                        <progress class="progre progre2" max="100" value="60"></progress>
+                    </div>
+                    <div class="task-progre">
+                        <p>PHP
+                            <span>50%</span>
+                        </p>
+                        <progress class="progre progre3" max="100" value="50"></progress>
+                    </div>
+                </div>
+
+                <!-- 2eme barre -->
+
+                <div class="progre-section" data-aos="fade-left" data-aos-once="true">
+                    <h3>Framworks</h3>
+                    <div class="task-progre">
+                        <p>Tailwind / Bootstrap
+                            <span>80%</span>
+                        </p>
+                        <progress class="progre progre1" max="100" value="80"></progress>
+                    </div>
+                    <div class="task-progre">
+                        <p>React
+                            <span>65%</span>
+                        </p>
+                        <progress class="progre progre2" max="100" value="65"></progress>
+                    </div>
+                    <div class="task-progre">
+                        <p>NodeJS
+                            <span>75%</span>
+                        </p>
+                        <progress class="progre progre3" max="100" value="75"></progress>
+                    </div>
+                </div>
+
+
+                <!-- 3eme barre -->
+
+                <div class="progre-section" data-aos="fade-left" data-aos-once="true">
+                    <h3>Base de données / autres</h3>
+                    <div class="task-progre">
+                        <p>MySql /SQL
+                            <span>60%</span>
+                        </p>
+                        <progress class="progre progre1" max="100" value="60"></progress>
+                    </div>
+                    <div class="task-progre">
+                        <p>CMS Wordpress
+                            <span>70%</span>
+                        </p>
+                        <progress class="progre progre2" max="100" value="70"></progress>
+                    </div>
+                    <div class="task-progre">
+                        <p>Illustrator / XD / Animate / Canva
+                            <span>65%</span>
+                        </p>
+                        <progress class="progre progre3" max="100" value="65"></progress>
+                    </div>
+                </div>
+            </div>
+
+            <!-- section etude -->
+            <!-- <div id="container"> -->
+            <h1 id="titre" style="margin: 5rem;">ETUDES & FORMATIONS</h1>
+            <div class="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="circles active">2012 Bac École du Mali</div>
+                <div class="circles">2012 - 2014 DUT GRH (Mali)</div>
+                <div class="circles">2016 Néerlandais (2.1) ULB</div>
+                <div class="circles">2017 - 2019 Aide-soignant Cobeff</div>
+                <div class="circles">2020 - 2021 Complément CESS IRG (Anderlecht)</div>
+                <div class="circles">2023 - 2024 Frontend Interface3, EN COURS</div>
+
+            </div>
+            <div class="button">
+                <button class="btn" id="prev" disabled>Prev</button>
+                <button class="btn" id="next">Next</button>
+            </div>
+            <!-- 
+            </div> -->
+
+        </section>
+
+            <div id="projet">
+
+                <h1 id="titre">Mes projets</h1>
+                <!-- <h2>HTML /CSS/JS </h2> -->
+
+                    <p class="texteProjet">Découvrez qui je suis à travers mon portfolio personnel. Réalisé avec HTML, CSS et JavaScript, 
+                        il offre une présentation claire de mon parcours et de mes compétences, avec une navigation simple et des animations discrètes.
+                        Contribuant à un projet collaboratif, j'ai participé à la création du blog culinaire "Saveurs du Monde". Utilisant HTML, CSS et
+                        JavaScript, j'ai développé une interface conviviale pour la découverte de recettes, avec des fonctionnalités de recherche dynamique.
+                    </p>
+            <div class="row">
+                <div class="box box1">
+                <h3> TRAVELINK </h3>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm-3gHV9xoRKREykfk4Ys2msQAq8XLN193Pg&usqp=CAU" />
+                </div>
+                
+                <div class="box box2">
+                <h3> Projet motivation</h3>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxxGBbrxkGIq-zRap_P-s9_oKhiNw9mMUk9Q&usqp=CAU" />
+                </div>
+                
+                <div class="box box3">
+                <h3>Jeux de calcul pour enfant</h3>
+                <i class="fa-solid fa-circle-chevron-right"></i>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYVY_nVs7GySEM84DKFA0xOR0H7D4e_LlnwA&usqp=CAU" />
+                </div>
+            </div>
+            </div>
+            
+
+
+
+
+
+
+
+        <section id="Contact">
+<!-- 
+            <h1 id="titre">Me Contacter</h1> -->
+
+
+
+        </section>
+
+
+        
+
+
+
+
+    </main>
+
+    <footer>
+        <div class="imglogo">
+            <a href="index.html"><img class="logofooter" src="/assets/logo1.png" alt="logo"</a> 
+        </div>
+</body>
+
+</footer>
+
+</html>
